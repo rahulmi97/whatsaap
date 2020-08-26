@@ -1,0 +1,385 @@
+/* Global Settings */
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+    width: 35%;
+    
+}
+.right {
+    width: 65%;
+    float: right;
+   
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 
+.text-center {
+    text-align: center;
+}
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+@media(max-width:1200px) {
+    .container {
+        width: 960px;
+    }
+}
+@media(max-width:992px) {
+    .container {
+        width: 740px;
+    }
+}
+@media(max-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.container-fluid {
+    padding: 0px 15px;
+}
+
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+} */
+
+/* Generic CSS */
+#main{
+    width: 100%;
+    
+    /* background-color: blue; */
+
+}
+.header{
+    background-color: #f0f0f0;
+    border-left: 1px solid lightgray;
+    
+}
+.header .propic{
+    height: 60px; 
+    width: 40%; 
+    
+}
+.header .propic img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.header .settings{
+width: 60%;
+height: 60px;
+
+}
+.settings{
+    position: relative;
+}
+.settings .status{
+    position: absolute;
+    left: 40%;
+    top: 15px;
+    height: 25px;
+    width: 25px;
+    border: 2px dashed gray;
+    border-radius: 50%;
+}
+.settings .newchats img{
+    position: absolute;
+    left: 60%;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    color: gray;
+}
+.settings .menu span{
+    position: absolute;
+    right: 40px ;
+    display: block;
+    width:3px;
+    height:3px;
+    border: 2.5px solid gray;
+    border-radius: 50%;
+
+}
+.settings .menu .one{
+    top: 15px;
+}
+.settings .menu .two{
+    top: 25px;
+}
+.settings .menu .three{
+    top: 35px;
+}
+.search{
+    background-color: #f7f7f7;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+   
+}
+.search .ser{
+    position: absolute;
+ 
+}
+.search .ser input{
+    position: relative;
+    height: 30px;
+    top: 10px;
+    left: 20px;
+    width: 110%;
+    border-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+}
+.search .plchlder{
+    position: relative;
+    top: -15px;
+    left: 100px;
+    font-size: 15px;
+    color: lightgray;
+}
+.search .ser img{
+    position: relative;
+    display: block;
+    top: -34px;
+    left:30px ;
+    height: 18px;
+    width: 18px;
+     
+
+}
+
+#list{
+height: 460px;
+overflow-y: scroll;
+
+}
+/* #list .sec1{
+    height: 100px;
+} */
+#list .pro{
+    width: 20%;
+}
+#list .pro img{
+height: 50px;
+width: 50px;
+margin-top: 10px;
+margin-left: 15px;
+border-radius: 50%;
+overflow: hidden;
+}
+#list .details{
+    width: 77%;
+    margin-right: 10px;
+    height: 70px;
+    margin-top: 10px;
+    /* font-size: 17px;
+    font-weight: 100; */
+    border-bottom: 1px solid lightgray;
+}
+#list .details span{
+    display: block;
+}
+#list .details .name{
+    font-weight: 200;
+    font-size: 17px;
+    margin-bottom: 5px;
+    
+}
+#list .details .msg{
+    font-weight: 100;
+    font-size: 15px;
+    color: #9f9f9f;
+}
+#list .details .msg1{
+    font-weight: 100;
+    font-size: 15px;
+    color: #9f9f9f;
+}#list .details .msg2{
+    font-weight: 100;
+    font-size: 15px;
+    color: #9f9f9f;
+}
+#list .details .msg::before{
+    content: '';
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    background-image: url('https://img.icons8.com/all/500/double-tick.png');
+}
+#list .details .msg2::before{
+    content: '';
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    background-image: url('https://www.pinclipart.com/picdir/big/170-1701281_tick-mark-png-icon-for-kids-whatsapp-blue.png');
+}
+#list .details .msg1::before{
+    content: '';
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    background-image: url('https://img.icons8.com/all/500/checkmark.png');
+}
+#list .sec1 .time{
+display: block;
+    margin-left: 270px;
+    margin-top: -35px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: lightgray;
+}
+#chat{
+    width: 100%;
+    height: 570px;
+    overflow-y: scroll;
+    /* background-image: url('https://www.jakpost.travel/wimages/large/119-1190275_worlds-okayest-bard-i-made-a-d-d.png'); */
+/* position: absolute; */
+}
+#chat .settings .sear{
+ margin-left: 65%;
+ margin-top: 15px;
+ 
+
+}
+#chat .settings .attach{
+height: 60px;
+width: 60px;
+margin-left: 78%;
+margin-top: -25px;
+}
+#chat .settings  img{
+height: 25px;
+width: 25px;
+}
+#chatbox{
+  height: 500px;
+  width: 100%;  
+  background-image: url('https://www.jakpost.travel/wimages/large/119-1190275_worlds-okayest-bard-i-made-a-d-d.png');
+background-size: 100% 100%;
+}
+.container1{
+
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+#chatbox .chats{    
+    /* background-color: red; */
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+#chatbox .chats span{
+    display: block;
+}
+#chatbox .chats .me{
+    text-align: center;
+    padding-top: 10px;
+position: relative;
+height: 40px;
+width: 100px;
+border-radius: 10px 10px 10px 0px;
+right: 0px;
+left: 20px;
+top: 80px;
+background-color: white;
+  
+    
+}
+#chatbox .chats .secnd{
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+width: 130px;
+border-radius: 10px 10px 0px 10px;
+    left: 600px;
+    top: 90px;
+    background-color: #DCF8C6;
+}
+#chatbox .typetosend{
+    height: 60px;
+    width: 100%;
+    background-color: #f0f0f0;
+    /* position: absolute; */
+}
+/* .search .ser{
+
+ 
+} */
+#chatbox .typetosend .ser input{
+    /* position: relative; */
+    height: 35px;
+   margin-top: 5px;
+   margin-left: 20px;
+    width: 80%;
+    border-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+}
+#chatbox .typetosend .ser img{
+    width: 20px;
+    height: 40px;
+    margin-left: 30px;
+}
+#chatbox .typetosend .ser::after{
+    content: '';
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/whatsapp-5/512/136_Mic_Microphone_Basic_Ui-512.png');
+    background-size: 100%;
+}
+#chatbox .typetosend .ser::before{
+    content: '';
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    background-image: url('https://www.freepngimg.com/thumb/emoji/65263-emoticon-of-smiley-face-tears-joy-whatsapp.png');
+    background-size: 100%;
+}
